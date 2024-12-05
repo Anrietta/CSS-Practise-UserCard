@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UserCard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-    <article>
-        <div class="bg">
+    <article class="user-card">
+        <div class="user-card-bg">
             <i class="fa-solid fa-pencil"></i>
         </div>
-        <img src="" alt="Jane S.Doe">
-        <h2>Jane S.Doe</h2>
-        <div>Amsterdam, Nethterlands</div>
-        <div>Copywriter</div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel tempora pariatur voluptates at doloribus soluta, molestiae provident iusto dolore. Consequuntur!</p>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook-f"></i>
+        <div class="content-wrapper">
+            <img src="./assets/images/User_profile_photo.jpg" alt="Jane S.Doe" class="user-card-photo">
+            <h2 class="user-name">Jane S.Doe</h2>
+            <div class="user-location">Amsterdam, Nethterlands</div>
+            <div class="user-position">Copywriter</div>
+            <p class="user-experience">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel tempora pariatur voluptates at doloribus soluta, molestiae provident iusto dolore. Consequuntur!</p>
+            <footer>
+                <i class="user-socials fa-brands fa-instagram"></i>
+                <i class="user-socials fa-brands fa-twitter"></i>
+                <i class="user-socials fa-brands fa-facebook-f"></i>
+            </footer>
+
+        </div>
     </article>
     
 </body>

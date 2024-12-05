@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --user-photo-width: 150px;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-card {
+    max-width: 300px;
+    width: 100%;
+    min-width: 250px;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px lightgrey;
+    overflow: hidden;
+}
+
+.user-card-bg {
+    background-image: url(./../images/BG_img.jpg);
+    background-repeat: no-repeat;
+    height: 150px;
+    color: white;
+    text-align: right;
+    padding: 25px;
+}
+
+.content-wrapper {
+    padding: 0 1em 1em;
+}
+
+.user-card-photo {
+    display: inline-block;
+    width: var(--user-photo-width);
+    height: var(--user-photo-width);
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: calc((-1) * var(--user-photo-width) / 2);
+    border: 3px solid white;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    margin: 0.3em 0;
+}
+
+.user-location {
+    font-size: 1rem;
+    margin: 0.3em 0;
+}
+
+.user-position {
+    font-size: 1.2rem;
+    margin: 0.3em 0;
+}
+
+.user-experience {
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+.user-socials {
+    background-color: grey;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    padding-top: 10px;
+    width: 45px;
+    height: 45px;
+    /* text-align: justify;  - тут це лише поламає верстку замість того щоб розтягнути елементи по рядку, тому дивись лайф хак внизу */
+}
+
+/* тут написано, що наступному елементу після першого елемента додати лівий відступ, таким чином ми другому і третьому елементу додамо лівий відступ, а першому ні - тому що перед ним немає такого ж елемента. Це дає нам змогу розтягнути три елемента по ширині рядка рівномірно */
+.user-socials + .user-socials {
+    margin-left: 35px;
+}
